@@ -1,5 +1,5 @@
 import { CSSProperties } from "react";
-import Front from "./components/body/Front";
+import FrontBody from "./components/body/FrontBody";
 
 export default () => {
   const frontBody: CSSProperties = {
@@ -10,9 +10,5 @@ export default () => {
     translate: "-50% -50%",
   };
 
-  return (
-    <div className="app-container">
-      <Front style={frontBody} />
-    </div>
-  );
+  return <FrontBody onBodyPartClick={console.log} style={frontBody} outline />;
 };
