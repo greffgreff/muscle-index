@@ -1,0 +1,7 @@
+.muscle {
+  opacity: 0.4;
+}
+
+.muscle:hover .muscle-group {
+  opacity: 1;
+}
